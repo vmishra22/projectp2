@@ -19,14 +19,21 @@ foreach($_POST as $key => $value) {
 		$addSymbolOption = true;
 }
 
+$numWordsReset = false;
 if($numWords == "")
+{
 	$numWords = 4;
+	$numWordsReset = true;
+}
 
 $array_rand_indices = array();
 for($i=0; $i < $numWords; $i++){
 	$random_index = rand(0,$file_word_count);
 	$array_rand_indices[$i] = $random_index;
 }
+
+if($numWordsReset)
+	$numWords = "";
 
 $i = 0;
 foreach ($array_rand_indices as $value) {
@@ -40,6 +47,10 @@ foreach ($passwordArray as $value) {
 	$passwordString .= "-";
 }
 
-echo $passwordString;
 $passwordString = substr($passwordString, 0, -1);
-echo $passwordString;
+
+if($addNumberOption)
+{
+	$random_number = rand(0, 9);
+	$passwordString .= $random_number;
+}

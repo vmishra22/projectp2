@@ -55,9 +55,9 @@
 		<h1>xkcd Password Generator</h1>
 	
 		<p class='password'>
-			settle-floating-eventually-edge		</p>
+			<?php echo $passwordString ?>	</p>
 		
-		<form>
+		<form method='POST' action='index.php'>
 			<p class='options'>
 			
 				<label for='number_of_words'># of Words</label>

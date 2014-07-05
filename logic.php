@@ -54,3 +54,8 @@ if($addNumberOption)
 	$random_number = rand(0, 9);
 	$passwordString .= $random_number;
 }
+
+if($addSymbolOption)
+{
+	$passwordString .= "@";
+}

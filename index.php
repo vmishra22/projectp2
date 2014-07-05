@@ -64,10 +64,10 @@
 				<input maxlength=1 type='text' name='number_of_words' id='number_of_words' value='<?php echo $numWords?>'>  (Max 9)
 				<br>
 					
-				<input type='checkbox' name='add_number' id='add_number' <?php if($addNumberOption) {?> CHECKED <?php }?>> 
+				<input type='checkbox' name='add_number' id='add_number' <?php if($addNumberOption) {?> CHECKED <?php }?> > 
 				<label for='add_number'>Add a number</label>
 				<br>
-				<input type='checkbox' name='add_symbol' id='add_symbol' > 
+				<input type='checkbox' name='add_symbol' id='add_symbol' <?php if($addSymbolOption) {?> CHECKED <?php }?> > 
 				<label for='add_symbol'>Add a symbol</label>
 			</p>
 		

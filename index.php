@@ -3,7 +3,7 @@
 <html>
 <head>
 
-	<title>xkcd Password Generator</title>
+	<title>Vinay's Password Generator</title>
 	<meta charset='utf-8'>
 	
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -50,9 +50,8 @@
 </head>
 <body>
 
-
 	<div class='container'>
-		<h1>xkcd Password Generator</h1>
+		<h1>Vinay's Password Generator</h1>
 	
 		<p class='password'>
 			<?php echo $passwordString ?>	</p>
@@ -69,6 +68,10 @@
 				<br>
 				<input type='checkbox' name='add_symbol' id='add_symbol' <?php if($addSymbolOption) {?> CHECKED <?php }?> > 
 				<label for='add_symbol'>Add a symbol</label>
+				<br>
+				<input type='checkbox' name='upper_case' id='upper_case' <?php if($makeUpperCase) {?> CHECKED <?php }?> > 
+				<label for='upper_case'>Upper case the first letter</label>
+				
 			</p>
 		
 			<input type='submit' class='btn btn-default' value='Gimme Another'>
